@@ -1,0 +1,100 @@
+.
+├── db
+│   ├── system_soc.db_info
+│   └── system_soc.quiproj.34300.rdr.flock
+├── doc
+├── hw
+│   ├── ip
+│   │   ├── system_soc
+│   │   │   ├── synthesis
+│   │   │   │   ├── submodules
+│   │   │   │   │   ├── altecc_dec.sv
+│   │   │   │   │   ├── altecc_enc.sv
+│   │   │   │   │   ├── altera_avalon_i2c_clk_cnt.v
+│   │   │   │   │   ├── altera_avalon_i2c_condt_det.v
+│   │   │   │   │   ├── altera_avalon_i2c_condt_gen.v
+│   │   │   │   │   ├── altera_avalon_i2c_csr.v
+│   │   │   │   │   ├── altera_avalon_i2c_fifo.v
+│   │   │   │   │   ├── altera_avalon_i2c_mstfsm.v
+│   │   │   │   │   ├── altera_avalon_i2c_rxshifter.v
+│   │   │   │   │   ├── altera_avalon_i2c_spksupp.v
+│   │   │   │   │   ├── altera_avalon_i2c_txout.v
+│   │   │   │   │   ├── altera_avalon_i2c_txshifter.v
+│   │   │   │   │   ├── altera_avalon_i2c.v
+│   │   │   │   │   ├── altera_avalon_sc_fifo.v
+│   │   │   │   │   ├── altera_merlin_address_alignment.sv
+│   │   │   │   │   ├── altera_merlin_arbitrator.sv
+│   │   │   │   │   ├── altera_merlin_axi_master_ni.sv
+│   │   │   │   │   ├── altera_merlin_burst_uncompressor.sv
+│   │   │   │   │   ├── altera_merlin_slave_agent.sv
+│   │   │   │   │   ├── altera_merlin_slave_translator.sv
+│   │   │   │   │   ├── altera_reset_controller.sdc
+│   │   │   │   │   ├── altera_reset_controller.v
+│   │   │   │   │   ├── altera_reset_synchronizer.v
+│   │   │   │   │   ├── ecc_dec.sv
+│   │   │   │   │   ├── ecc_enc.sv
+│   │   │   │   │   ├── niosv_axi_channel_fsm.sv
+│   │   │   │   │   ├── niosv_cpp_alu.sv
+│   │   │   │   │   ├── niosv_cpp_avalon_if.sv
+│   │   │   │   │   ├── niosv_cpp_axi4lite_if.sv
+│   │   │   │   │   ├── niosv_cpp_core.sv
+│   │   │   │   │   ├── niosv_cpp_csr.sv
+│   │   │   │   │   ├── niosv_cpp_fsm.sv
+│   │   │   │   │   ├── niosv_cpp_mult.sv
+│   │   │   │   │   ├── niosv_cpp.pkg.sv
+│   │   │   │   │   ├── niosv_cpp_rf.sv
+│   │   │   │   │   ├── niosv_cpp_shift_fast.sv
+│   │   │   │   │   ├── niosv_cpp_shift.sv
+│   │   │   │   │   ├── niosv_cpp_zbb.sv
+│   │   │   │   │   ├── niosv.pkg.sv
+│   │   │   │   │   ├── niosv_ram.sv
+│   │   │   │   │   ├── niosv_reset_controller.v
+│   │   │   │   │   ├── riscv.pkg.sv
+│   │   │   │   │   ├── system_soc_CPU_core.sv
+│   │   │   │   │   ├── system_soc_CPU.v
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_avalon_st_adapter.v
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_cmd_demux_002.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_cmd_demux.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_cmd_mux_001.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_cmd_mux.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_router_002.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_router_004.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_router_005.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_router.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_rsp_demux.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_rsp_mux_002.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0_rsp_mux.sv
+│   │   │   │   │   ├── system_soc_mm_interconnect_0.v
+│   │   │   │   │   ├── system_soc_SRAM.hex
+│   │   │   │   │   ├── system_soc_SRAM.v
+│   │   │   │   │   ├── system_soc_TIMER.v
+│   │   │   │   │   └── system_soc_UART.v
+│   │   │   │   ├── system_soc.debuginfo
+│   │   │   │   ├── system_soc.qip
+│   │   │   │   ├── system_soc.regmap
+│   │   │   │   └── system_soc.v
+│   │   │   ├── system_soc_bb.v
+│   │   │   ├── system_soc.bsf
+│   │   │   ├── system_soc.cmp
+│   │   │   ├── system_soc_generation_previous.rpt
+│   │   │   ├── system_soc_generation.rpt
+│   │   │   ├── system_soc.html
+│   │   │   ├── system_soc_inst.v
+│   │   │   ├── system_soc_inst.vhd
+│   │   │   └── system_soc.xml
+│   │   ├── system_soc.qsys
+│   │   ├── system_soc.sopcinfo
+│   │   └── system_soc.tcl
+│   ├── quartus
+│   ├── rtl
+│   ├── sdc
+│   └── tcl
+├── README.md
+├── sim
+├── sw
+│   ├── app
+│   ├── bsp
+│   └── scripts
+├── system_soc.qpf
+└── system_soc.qsf

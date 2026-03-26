@@ -1,8 +1,21 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
-preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
-preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)unsaved.reset) 1 0 1 NJ
-levelinfo -pg 1 0 50 270
-levelinfo -hier unsaved 60 90 260
+preplace inst system_soc.TIMER -pg 1 -lvl 3 -y 110
+preplace inst system_soc.CPU.clock_bridge -pg 1
+preplace inst system_soc.I2C -pg 1 -lvl 3 -y 210
+preplace inst system_soc.CPU.reset_bridge -pg 1
+preplace inst system_soc -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst system_soc.CPU -pg 1 -lvl 2 -y 260
+preplace inst system_soc.CLK -pg 1 -lvl 1 -y 290
+preplace inst system_soc.UART -pg 1 -lvl 3 -y 330
+preplace inst system_soc.SRAM -pg 1 -lvl 3 -y 30
+preplace inst system_soc.CPU.core -pg 1
+preplace netloc EXPORT<net_container>system_soc</net_container>(SLAVE)UART.external_connection,(SLAVE)system_soc.debug_export) 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc FAN_OUT<net_container>system_soc</net_container>(SLAVE)SRAM.clk1,(SLAVE)TIMER.clk,(MASTER)CLK.clk,(SLAVE)I2C.clock,(SLAVE)CPU.clk,(SLAVE)UART.clk) 1 1 2 300 340 620
+preplace netloc FAN_OUT<net_container>system_soc</net_container>(SLAVE)CPU.reset,(MASTER)CLK.clk_reset,(SLAVE)SRAM.reset1,(SLAVE)UART.reset,(SLAVE)TIMER.reset,(SLAVE)I2C.reset_sink) 1 1 2 320 380 640
+preplace netloc INTERCONNECT<net_container>system_soc</net_container>(SLAVE)SRAM.s1,(SLAVE)TIMER.s1,(MASTER)CPU.instruction_manager,(MASTER)CPU.data_manager,(SLAVE)I2C.csr,(SLAVE)UART.s1) 1 2 1 580
+preplace netloc EXPORT<net_container>system_soc</net_container>(SLAVE)I2C.i2c_serial,(SLAVE)system_soc.com_export) 1 0 3 NJ 220 NJ 220 NJ
+preplace netloc EXPORT<net_container>system_soc</net_container>(SLAVE)system_soc.reset,(SLAVE)CLK.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>system_soc</net_container>(SLAVE)system_soc.clk,(SLAVE)CLK.clk_in) 1 0 1 NJ
+levelinfo -pg 1 0 90 830
+levelinfo -hier system_soc 100 130 380 670 820

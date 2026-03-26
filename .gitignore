@@ -1,12 +1,15 @@
-# ==========================================
-# Ignorar Archivos de Quartus Prime Standard
-# ==========================================
-hw/quartus/db/
-hw/quartus/incremental_db/
-hw/quartus/output_files/
-hw/quartus/simulation/
-hw/quartus/greybox_tmp/
-hw/quartus/hc_output/
+# =========================================================================
+# 1. BASES DE DATOS Y COMPILACIÓN DE QUARTUS PRIME (Directorio Raíz)
+# =========================================================================
+# Ignorar carpetas de bases de datos temporales y de compilación
+/db/
+/incremental_db/
+/output_files/
+/simulation/
+/greybox_tmp/
+/hc_output/
+
+# Ignorar archivos de reporte y logs en la raíz
 *.rpt
 *.smsg
 *.summary
@@ -18,29 +21,53 @@ hw/quartus/hc_output/
 *.qqq
 *.jdi
 *.sld
+*.flock
 
-# Mantener solo configuraciones de Quartus
-!hw/quartus/*.qpf
-!hw/quartus/*.qsf
-
-# ==========================================
-# Ignorar Archivos Generados por Qsys (Platform Designer)
-# ==========================================
-# Ignoramos la carpeta generada por Qsys, solo guardamos el .qsys original
+# =========================================================================
+# 2. ARCHIVOS GENERADOS POR QSYS (Platform Designer)
+# =========================================================================
+# Nota: Se preserva hw/ip/system_soc/synthesis/ por decisión del proyecto.
+# Solo ignoramos testbenches y simulaciones si se llegan a generar.
 hw/ip/*_tb/
-hw/ip/*/synthesis/
 hw/ip/*/sim/
-*.sopcinfo
-*.html
-*.cmp
 
-# ==========================================
-# Ignorar Archivos de Software (Nios V / RiscFree / CMake)
-# ==========================================
+# Archivos de metadatos de generación de Qsys que causan ruido en los commits
+*.debuginfo
+*.regmap
+*.bsf
+*.cmp
+*.html
+*.xml
+*generation.rpt
+*generation_previous.rpt
+
+# =========================================================================
+# 3. DOMINIO DE SOFTWARE (Nios V / RiscFree IDE / CMake)
+# =========================================================================
+# Ignorar directorios de compilación out-of-tree y Board Support Package
 sw/build/
 sw/bsp/
+
+# Ignorar binarios ejecutables y mapas de memoria generados por GCC
 *.elf
 *.objdump
 *.map
+*.o
+*.a
+
+# Ignorar metadatos de entornos de desarrollo (Eclipse/RiscFree/VSCode)
 .vscode/
+.metadata/
+.settings/
+.cproject
+.project
 compile_commands.json
+
+# =========================================================================
+# 4. EXCEPCIONES EXPLÍCITAS (Archivos vitales que NUNCA deben ignorarse)
+# =========================================================================
+!*.qpf
+!*.qsf
+!*.qsys
+!*.tcl
+!*.sopcinfo
