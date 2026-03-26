@@ -1,0 +1,46 @@
+# ==========================================
+# Ignorar Archivos de Quartus Prime Standard
+# ==========================================
+hw/quartus/db/
+hw/quartus/incremental_db/
+hw/quartus/output_files/
+hw/quartus/simulation/
+hw/quartus/greybox_tmp/
+hw/quartus/hc_output/
+*.rpt
+*.smsg
+*.summary
+*.done
+*.pin
+*.qws
+*.bak
+*.qdf
+*.qqq
+*.jdi
+*.sld
+
+# Mantener solo configuraciones de Quartus
+!hw/quartus/*.qpf
+!hw/quartus/*.qsf
+
+# ==========================================
+# Ignorar Archivos Generados por Qsys (Platform Designer)
+# ==========================================
+# Ignoramos la carpeta generada por Qsys, solo guardamos el .qsys original
+hw/ip/*_tb/
+hw/ip/*/synthesis/
+hw/ip/*/sim/
+*.sopcinfo
+*.html
+*.cmp
+
+# ==========================================
+# Ignorar Archivos de Software (Nios V / RiscFree / CMake)
+# ==========================================
+sw/build/
+sw/bsp/
+*.elf
+*.objdump
+*.map
+.vscode/
+compile_commands.json

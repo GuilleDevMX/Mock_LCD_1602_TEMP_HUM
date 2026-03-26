@@ -1,0 +1,114 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 288 288)
+	(text "system_soc" (rect 109 -1 159 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 272 20 284)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "com_export_sda_in" (rect 0 0 80 12)(font "Arial" (font_size 8)))
+		(text "com_export_sda_in" (rect 4 101 106 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "com_export_scl_in" (rect 0 0 76 12)(font "Arial" (font_size 8)))
+		(text "com_export_scl_in" (rect 4 117 106 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 112 128)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "debug_export_rxd" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "debug_export_rxd" (rect 4 189 100 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 112 200)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 245 82 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 112 256)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(output)
+		(text "com_export_sda_oe" (rect 0 0 83 12)(font "Arial" (font_size 8)))
+		(text "com_export_sda_oe" (rect 4 133 106 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 112 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(output)
+		(text "com_export_scl_oe" (rect 0 0 80 12)(font "Arial" (font_size 8)))
+		(text "com_export_scl_oe" (rect 4 149 106 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 112 160)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(output)
+		(text "debug_export_txd" (rect 0 0 71 12)(font "Arial" (font_size 8)))
+		(text "debug_export_txd" (rect 4 205 100 216)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 112 216)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 97 43 212 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 67 252 144)(font "Arial" (color 0 0 0)))
+		(text "com_export" (rect 45 83 150 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "sda_in" (rect 117 107 270 224)(font "Arial" (color 0 0 0)))
+		(text "scl_in" (rect 117 123 270 256)(font "Arial" (color 0 0 0)))
+		(text "sda_oe" (rect 117 139 270 288)(font "Arial" (color 0 0 0)))
+		(text "scl_oe" (rect 117 155 270 320)(font "Arial" (color 0 0 0)))
+		(text "debug_export" (rect 34 171 140 355)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "rxd" (rect 117 195 252 400)(font "Arial" (color 0 0 0)))
+		(text "txd" (rect 117 211 252 432)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 83 227 196 467)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 117 251 276 512)(font "Arial" (color 0 0 0)))
+		(text " system_soc " (rect 232 272 536 554)(font "Arial" ))
+		(line (pt 112 32)(pt 176 32)(line_width 1))
+		(line (pt 176 32)(pt 176 272)(line_width 1))
+		(line (pt 112 272)(pt 176 272)(line_width 1))
+		(line (pt 112 32)(pt 112 272)(line_width 1))
+		(line (pt 113 52)(pt 113 76)(line_width 1))
+		(line (pt 114 52)(pt 114 76)(line_width 1))
+		(line (pt 113 92)(pt 113 164)(line_width 1))
+		(line (pt 114 92)(pt 114 164)(line_width 1))
+		(line (pt 113 180)(pt 113 220)(line_width 1))
+		(line (pt 114 180)(pt 114 220)(line_width 1))
+		(line (pt 113 236)(pt 113 260)(line_width 1))
+		(line (pt 114 236)(pt 114 260)(line_width 1))
+		(line (pt 0 0)(pt 288 0)(line_width 1))
+		(line (pt 288 0)(pt 288 288)(line_width 1))
+		(line (pt 0 288)(pt 288 288)(line_width 1))
+		(line (pt 0 0)(pt 0 288)(line_width 1))
+	)
+)
