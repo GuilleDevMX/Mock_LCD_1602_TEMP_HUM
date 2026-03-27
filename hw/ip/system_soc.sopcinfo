@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="system_soc" kind="system_soc" version="1.0" fabric="QSYS">
  <!-- Format version 25.1 1129 (Future versions may contain additional information.) -->
- <!-- 2026.03.26.18:57:26 -->
+ <!-- 2026.03.26.20:38:08 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1774573046</value>
+  <value>1774579088</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -2813,7 +2813,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <assignment>
    <name>embeddedsw.CMacro.ALWAYS_RUN</name>
-   <value>1</value>
+   <value>0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.COUNTER_SIZE</name>
@@ -2821,7 +2821,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FIXED_PERIOD</name>
-   <value>1</value>
+   <value>0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FREQ</name>
@@ -2849,7 +2849,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.SNAPSHOT</name>
-   <value>0</value>
+   <value>1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TICKS_PER_SEC</name>
@@ -2864,12 +2864,28 @@ the requested settings for a module instance. -->
    <value>1</value>
   </assignment>
   <assignment>
+   <name>embeddedsw.dts.compatible</name>
+   <value>altr,timer-1.0</value>
+  </assignment>
+  <assignment>
+   <name>embeddedsw.dts.group</name>
+   <value>timer</value>
+  </assignment>
+  <assignment>
+   <name>embeddedsw.dts.name</name>
+   <value>timer</value>
+  </assignment>
+  <assignment>
+   <name>embeddedsw.dts.params.clock-frequency</name>
+   <value>50000000</value>
+  </assignment>
+  <assignment>
    <name>embeddedsw.dts.vendor</name>
    <value>altr</value>
   </assignment>
   <parameter name="alwaysRun">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -2885,7 +2901,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="fixedPeriod">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -2917,7 +2933,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="snapshot">
    <type>boolean</type>
-   <value>false</value>
+   <value>true</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -2951,7 +2967,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timerPreset">
    <type>java.lang.String</type>
-   <value>SIMPLE_PERIODIC_INTERRUPT</value>
+   <value>FULL_FEATURED</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>

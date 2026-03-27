@@ -181,13 +181,13 @@
   <parameter name="writable" value="true" />
  </module>
  <module name="TIMER" kind="altera_avalon_timer" version="25.1" enabled="1">
-  <parameter name="alwaysRun" value="true" />
+  <parameter name="alwaysRun" value="false" />
   <parameter name="counterSize" value="32" />
-  <parameter name="fixedPeriod" value="true" />
+  <parameter name="fixedPeriod" value="false" />
   <parameter name="period" value="1" />
   <parameter name="periodUnits" value="MSEC" />
   <parameter name="resetOutput" value="false" />
-  <parameter name="snapshot" value="false" />
+  <parameter name="snapshot" value="true" />
   <parameter name="systemFrequency" value="50000000" />
   <parameter name="timeoutPulseOutput" value="false" />
   <parameter name="watchdogPulse" value="2" />
