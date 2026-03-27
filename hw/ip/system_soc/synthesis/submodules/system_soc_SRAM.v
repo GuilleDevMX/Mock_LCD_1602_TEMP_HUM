@@ -36,7 +36,7 @@ module system_soc_SRAM (
                        )
 ;
 
-  parameter INIT_FILE = "system_soc_SRAM.hex";
+  parameter INIT_FILE = "/home/guilledev/Documents/Win/FPGA/EP4CE6E22C8N/Projects/Mock_LCD_1602_TEMP_HUM/sw/build/SRAM.hex";
 
 
   output  [ 31: 0] readdata;

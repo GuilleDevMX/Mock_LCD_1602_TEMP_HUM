@@ -4,9 +4,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define BMP280_I2C_ADDR (0x76U) /* Puede ser 0x77U si SDO está a VCC */
+#define BMP280_I2C_ADDR (0x76U) 
 
-/* Estructura de Calibración Interna (Guardada en SRAM estática) */
 typedef struct {
     uint16_t dig_T1; int16_t  dig_T2; int16_t  dig_T3;
     uint16_t dig_P1; int16_t  dig_P2; int16_t  dig_P3;
@@ -14,10 +13,9 @@ typedef struct {
     int16_t  dig_P7; int16_t  dig_P8; int16_t  dig_P9;
 } Bmp280_Calib_t;
 
-/* Estructura de Datos de Salida en Punto Fijo */
 typedef struct {
-    int32_t  temp_c_x100; /* Temp x 100 (ej. 2512 = 25.12 °C) */
-    uint32_t press_pa;    /* Presión en Pascales (ej. 101325 = 1013.25 hPa) */
+    int32_t  temp_c_x100; 
+    uint32_t press_pa;    
     bool     valid;
 } BMP280_Data_t;
 

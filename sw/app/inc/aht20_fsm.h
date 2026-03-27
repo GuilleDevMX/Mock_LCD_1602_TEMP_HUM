@@ -6,11 +6,10 @@
 
 #define AHT20_I2C_ADDR (0x38U)
 
-/* Estructura de datos sanitizada (Punto Fijo) */
 typedef struct {
-    int32_t  temp_c_x10;  /* Temperatura x 10 (ej. 253 = 25.3 C) */
-    uint32_t hum_rh_x10;  /* Humedad x 10 (ej. 456 = 45.6 %) */
-    bool     valid;       /* true si el CRC/Status es correcto */
+    int32_t  temp_c_x10;  
+    uint32_t hum_rh_x10;  
+    bool     valid;       
 } AHT20_Data_t;
 
 void AHT20_Init_Async(void);

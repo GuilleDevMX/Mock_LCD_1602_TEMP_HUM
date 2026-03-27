@@ -2,7 +2,7 @@ set_global_assignment -entity "system_soc" -library "system_soc" -name IP_TOOL_N
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_TOOL_VERSION "25.1"
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "system_soc" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../system_soc.sopcinfo"]
-set_global_assignment -entity "system_soc" -library "system_soc" -name SLD_INFO "QSYS_NAME system_soc HAS_SOPCINFO 1 GENERATION_ID 1774569306"
+set_global_assignment -entity "system_soc" -library "system_soc" -name SLD_INFO "QSYS_NAME system_soc HAS_SOPCINFO 1 GENERATION_ID 1774573046"
 set_global_assignment -library "system_soc" -name MISC_FILE [file join $::quartus(qip_path) "../system_soc.cmp"]
 set_global_assignment -library "system_soc" -name SLD_FILE [file join $::quartus(qip_path) "system_soc.regmap"]
 set_global_assignment -library "system_soc" -name SLD_FILE [file join $::quartus(qip_path) "system_soc.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPON
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc3NDU2OTMwNg==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc3NDU3MzA0Ng==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBJViBF::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVA0Q0UxMEUyMkM4::QXV0byBERVZJQ0U="
 set_global_assignment -entity "system_soc" -library "system_soc" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -603,13 +603,15 @@ set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_C
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZHVhbFBvcnQ=::ZmFsc2U=::RHVhbC1wb3J0IGFjY2Vzcw=="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9lbmFibGVEaWZmV2lkdGg=::ZmFsc2U=::ZGVyaXZlZF9lbmFibGVEaWZmV2lkdGg="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "aW5pdE1lbUNvbnRlbnQ=::dHJ1ZQ==::SW5pdGlhbGl6ZSBtZW1vcnkgY29udGVudA=="
+set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "aW5pdGlhbGl6YXRpb25GaWxlTmFtZQ==::L2hvbWUvZ3VpbGxlZGV2L0RvY3VtZW50cy9XaW4vRlBHQS9FUDRDRTZFMjJDOE4vUHJvamVjdHMvTW9ja19MQ0RfMTYwMl9URU1QX0hVTS9zdy9idWlsZC9TUkFNLmhleA==::VXNlciBjcmVhdGVkIGluaXRpYWxpemF0aW9uIGZpbGU="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZW5QUkluaXRNb2Rl::ZmFsc2U=::RW5hYmxlIFBhcnRpYWwgUmVjb25maWd1cmF0aW9uIEluaXRpYWxpemF0aW9uIE1vZGU="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "bWVtb3J5U2l6ZQ==::MzI3Njg=::VG90YWwgbWVtb3J5IHNpemU="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "c2ltQWxsb3dNUkFNQ29udGVudHNGaWxl::ZmFsc2U=::QWxsb3cgTVJBTSBjb250ZW50cyBmaWxlIGZvciBzaW11bGF0aW9u"
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "c2ltTWVtSW5pdE9ubHlGaWxlbmFtZQ==::MA==::U2ltdWxhdGlvbiBtZW1pbml0IG9ubHkgaGFzIGZpbGVuYW1l"
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9zaW5nbGVDbG9ja09wZXJhdGlvbg==::ZmFsc2U=::ZGVyaXZlZF9zaW5nbGVDbG9ja09wZXJhdGlvbg=="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "c2xhdmUxTGF0ZW5jeQ==::MQ==::U2xhdmUgczEgTGF0ZW5jeQ=="
-set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "dXNlTm9uRGVmYXVsdEluaXRGaWxl::ZmFsc2U=::RW5hYmxlIG5vbi1kZWZhdWx0IGluaXRpYWxpemF0aW9uIGZpbGU="
+set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "dXNlTm9uRGVmYXVsdEluaXRGaWxl::dHJ1ZQ==::RW5hYmxlIG5vbi1kZWZhdWx0IGluaXRpYWxpemF0aW9uIGZpbGU="
+set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "Y29weUluaXRGaWxl::ZmFsc2U=::Q29weSBub24tZGVmYXVsdCBpbml0aWFsaXphdGlvbiBmaWxlIHRvIGdlbmVyYXRlZCBmb2xkZXI="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "d3JpdGFibGU=::dHJ1ZQ==::VHlwZQ=="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZWNjX2VuYWJsZWQ=::ZmFsc2U=::RXh0ZW5kIHRoZSBkYXRhIHdpZHRoIHRvIHN1cHBvcnQgRUNDIGJpdHM="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "cmVzZXRyZXF1ZXN0X2VuYWJsZWQ=::dHJ1ZQ==::UmVzZXQgUmVxdWVzdA=="
@@ -622,7 +624,7 @@ set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_C
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9zZXRfZGF0YV93aWR0aDI=::MzI=::U2xhdmUgMiBkYXRhIHdpZHRo"
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9ndWlfcmFtX2Jsb2NrX3R5cGU=::QXV0b21hdGlj::ZGVyaXZlZF9ndWlfcmFtX2Jsb2NrX3R5cGU="
 set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9pc19oYXJkY29weQ==::ZmFsc2U=::ZGVyaXZlZF9pc19oYXJkY29weQ=="
-set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9pbml0X2ZpbGVfbmFtZQ==::c3lzdGVtX3NvY19TUkFNLmhleA==::ZGVyaXZlZF9pbml0X2ZpbGVfbmFtZQ=="
+set_global_assignment -entity "system_soc_SRAM" -library "system_soc" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9pbml0X2ZpbGVfbmFtZQ==::L2hvbWUvZ3VpbGxlZGV2L0RvY3VtZW50cy9XaW4vRlBHQS9FUDRDRTZFMjJDOE4vUHJvamVjdHMvTW9ja19MQ0RfMTYwMl9URU1QX0hVTS9zdy9idWlsZC9TUkFNLmhleA==::ZGVyaXZlZF9pbml0X2ZpbGVfbmFtZQ=="
 set_global_assignment -entity "altera_avalon_i2c" -library "system_soc" -name IP_COMPONENT_NAME "YWx0ZXJhX2F2YWxvbl9pMmM="
 set_global_assignment -entity "altera_avalon_i2c" -library "system_soc" -name IP_COMPONENT_DISPLAY_NAME "QXZhbG9uIEkyQyAoTWFzdGVyKSBJUA=="
 set_global_assignment -entity "altera_avalon_i2c" -library "system_soc" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -733,7 +735,6 @@ set_global_assignment -library "system_soc" -name SYSTEMVERILOG_FILE [file join 
 set_global_assignment -library "system_soc" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "system_soc" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_soc_UART.v"]
 set_global_assignment -library "system_soc" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_soc_TIMER.v"]
-set_global_assignment -library "system_soc" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/system_soc_SRAM.hex"]
 set_global_assignment -library "system_soc" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_soc_SRAM.v"]
 set_global_assignment -library "system_soc" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_i2c.v"]
 set_global_assignment -library "system_soc" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_i2c_csr.v"]
